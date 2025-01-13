@@ -1,0 +1,60 @@
+* {
+    background-color: lightblue;
+}
+
+span {
+    font-size: 70px;
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+
+p.menu {
+    text-align: center;
+    font-size: 20px;
+}
+
+a.cambio:hover {
+    background-color: yellow;
+    color: red;
+}
+
+p.bio::first-line {
+    color: red;
+}
+
+br {
+    counter-reset: ciclos;
+}
+
+p.bio::before {
+    content: counter(ciclos) ".";
+    counter-increment: ciclos;
+}
+
+a.enlace:link {
+    background-color: white;
+}
+
+a.enlace:visited {
+    background-color: blue;
+    color: white;
+}
+
+img {
+    float: right;
+    width: 300px;
+}
+
+h2.ultimo {
+    counter-reset: ciclos2;
+}
+
+p.final::before {
+    content: counter(ciclos2) ".";
+    counter-increment: ciclos2;
+}
